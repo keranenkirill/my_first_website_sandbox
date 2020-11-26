@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+z    <link href="lightbox.css" rel="stylesheet" />
+
+
+    <title>KUVANKÄSITTELY TEHTÄVÄ 1/2</title>
+
+    <style>
+
+        .nav {
+            margin: auto;
+            width: 50%;
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+            text-decoration: underline rgba(196, 196, 196, 10);
+        }
+
+        .images{
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        .images a:hover{
+            border-radius: 25px;
+
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,5);
+        }
+        .clear { clear: both;}
+
+        .nav a{
+            color: white;
+            padding: 40px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+
+        }
+        img{
+            border-radius: 25px;
+
+        }
+
+
+        body {
+
+            background-color: rgba(0,0,0,0.88)
+
+        }
+
+        #MAIN, #VIDEO, #ABOUT {
+            background-color: rgba(196, 196, 196, 0.322);
+
+        }
+
+        #GALLERIA{
+            background-color: rgba(196, 196, 196, 0.322);
+
+        }
+
+
+        .box1 {
+            position: relative;
+            display: inline;
+        }
+
+        .dropdown-content {
+            border-radius: 25px;
+
+            display: none;
+            position: absolute;
+            background-color: rgba(196, 196, 196, 0.9);
+            min-width: 100%;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,25);
+            z-index: 0;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 22px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        .nav a:hover {
+            border-radius: 25px;
+
+            background-color: #ddd;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,50);
+
+        }
+
+        .box1:hover .dropdown-content {
+            display: block;
+        }
+
+        /*.box1:hover  {background-color: rgba(196, 196, 196, 2);}*/
+
+
+        .box, .box1 {
+            border-radius: 25px;
+
+            height: 100px;
+            width: 25%;
+            padding-top: 0px;
+            border: 1px solid black;
+            /*padding: 10px 30px;*/
+
+            color: white;
+            /*display: inline-block; */
+
+            float: left;
+            box-sizing: border-box;
+            text-align: center;
+            text-decoration: none;
+
+        }
+
+        .clear { clear: both;}
+
+        .imgbox{
+            border-radius: 25px;
+
+            background-color: rgba(196, 196, 196, 0.322);
+            width: 50%;
+            padding: 10px;
+            columns: auto ;
+            margin: auto;
+
+        }
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+<h1>KUVANKÄSITTELY TEHTÄVÄ 1/2</h1>
+
+<nav class="nav" id="nav">
+    <div class="box" id="MAIN"><a href="home.html">MAIN</a></div>
+    <div class="box" id="VIDEO"><a href="OMAVIDEO.html">VIDEO</a></div>
+
+    <div class="box1" id="GALLERIA"><a href="GALLERIA.html">GALLERIA</a>
+        <div class="dropdown-content">
+
+            <a href="kuvankasittely2.html">MEDIA 5 T2/2</a>
+            <a href="kuvaformaatit.html">MEDIA 2 KUVAFORM.</a>
+        </div>
+    </div>
+    <div class="box" id="ABOUT"><a href="ABOUT.html">ABOUT</a></div>
+</nav>
+
+<div class = "clear"></div>
+
+<h2> </h2>
+
+<div class="imgbox">
+    <div class="images" >
+
+        <a href="img/rekka_uuspinta.jpg" data-lightbox="galleria" data-title="MUOKATTU REKKAKUVA"    >
+            <img src="img/rekka_uuspinta_small.jpg" alt="MUOKATTU REKKAKUVA">
+        </a>
+
+        <a href="img/porsche-911-gt3-rs-with-carbon-fiber-roof-box-rendered-as-flat-sane-daily-driver-116447_1_big.jpg" data-lightbox="galleria" data-title="MASKIEN KÄYTTÖÄ">
+            <img src="img/porsche-911-gt3-rs-with-carbon-fiber-roof-box-rendered-as-flat-sane-daily-driver-116447_1.jpg" alt="MASKIEN KÄYTTÖÄ">
+        </a>
+
+    </div>
+
+</div>
+
+<script src="lightbox-plus-jquery.js"></script>
+</body>
+</html>

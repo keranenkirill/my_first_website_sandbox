@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="lightbox.css" rel="stylesheet" />
+
+
+    <title>OMASIVU</title>
+
+    <style>
+
+        .nav {
+            margin: auto;
+            width: 50%;
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+            text-decoration: underline rgba(196, 196, 196, 10);
+        }
+
+        .images{
+
+            padding: 7.5%;
+            width: auto;
+            text-align: center;
+        }
+        .images a:hover{
+            border-radius: 50px;
+
+            box-shadow: 0px 7px 16px 0px rgba(0,0,0,50);
+
+        }
+        img{
+            border-radius: 25px;
+
+        }
+
+
+        .nav a{
+            color: white;
+            padding: 40px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+   
+        }
+
+
+        body {
+
+            background-color: rgba(0,0,0,0.88)
+
+        }
+
+        #MAIN, #VIDEO, #ABOUT {
+            background-color: rgba(196, 196, 196, 0.322);
+
+        }
+
+        #GALLERIA{
+            background-color: rgba(196, 196, 196, 0.322);
+
+        }
+
+
+        .box1 {
+            position: relative;
+            display: inline;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(196, 196, 196, 0.9);
+            min-width: 100%;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,1.33);
+            z-index: 0;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 22px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        .nav a:hover {
+            border-radius: 25px;
+
+            background-color: #ddd;
+
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,1.33);
+
+        }
+
+        .box1:hover .dropdown-content {
+            border-radius: 25px;
+
+            display: block;
+        }
+
+        /*.box1:hover  {background-color: rgba(196, 196, 196, 2);}*/
+
+
+        .box, .box1{
+            border-radius: 25px;
+
+            height: 100px;
+            width: 25%;
+            padding-top: 0px;
+            border: 1px solid black;
+            /*padding: 10px 30px;*/
+           
+            color: white;
+            /*display: inline-block; */
+
+            float: left;
+            box-sizing: border-box;
+            text-align: center;
+            text-decoration: none;
+
+        }
+
+        .clear { clear: both;}
+        .imgbox{
+            border-radius: 25px;
+
+            background-color: rgba(196, 196, 196, 0.322);
+            width: 50%;
+            padding: 10px;
+            columns: auto ;
+            margin: auto;
+
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <h1>GALLERIA</h1>
+
+
+    <div class = "clear"></div>
+
+    <nav class="nav" id="nav">  
+        <div class="box" id="MAIN"><a href="home.html">MAIN</a></div>
+        <div class="box" id="VIDEO"><a href="OMAVIDEO.html">VIDEO</a></div>
+
+        <div class="box1" id="GALLERIA"><a href="GALLERIA.html">GALLERIA</a>
+            <div class="dropdown-content">
+                <a href="kuvankasittely1.html">MEDIA 5 T1/2</a>
+                <a href="kuvankasittely2.html">MEDIA 5 T2/2</a>
+                <a href="kuvaformaatit.html">MEDIA 2 KUVAFORM.</a>
+            </div>
+        </div>
+        <div class="box" id="ABOUT"><a href="ABOUT.html">ABOUT</a></div>  
+    </nav>
+    <div class = "clear"></div>
+
+    <h2> </h2>
+
+    <div class="imgbox">
+        <div class="images" >
+            <a href="img/1971301highres.jpg" data-lightbox="galleria" data-title="gighersbig"    >
+                <img src="img/1971301highres-small.jpg" alt="highers">
+            </a>
+
+            <a href="img/456240-popular-mountain-background-images-2560x1600-mac.jpg" data-lightbox="galleria" data-title="mountainbig">
+                <img src="img/456240-popular-mountain-background-images-mac-small.jpg" alt="mountain">
+            </a>
+
+            <a href="img/mountains-in-autumn-landscape-l.jpg" data-lightbox="galleria" data-title="mountain in autumn big">
+                <img src="img/mountains-in-autumn-landscape-l-small.jpg" alt="mountain in autumn">
+            </a>
+        </div>
+
+
+
+
+    </div>
+
+    
+    <script src="lightbox-plus-jquery.js"></script>
+</body>
+</html>

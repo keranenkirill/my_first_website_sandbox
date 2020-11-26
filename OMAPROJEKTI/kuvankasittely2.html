@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="lightbox.css" rel="stylesheet" />
+
+
+    <title>KUVANKÄSITTELY TEHTÄVÄ</title>
+
+    <style>
+
+        .nav {
+            margin: auto;
+            width: 50%;
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+            text-decoration: underline rgba(196, 196, 196, 10);
+        }
+
+        .images{
+            padding: 10px;
+        }
+        .images a:hover{
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,50);
+        }
+
+        .nav a{
+            color: white;
+            padding: 40px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+
+        }
+
+
+        body {
+
+            background-color: rgba(0,0,0,0.88)
+
+        }
+
+        #MAIN, #VIDEO, #ABOUT {
+            background-color: rgba(196, 196, 196, 0.322);
+
+        }
+
+        #GALLERIA{
+            background-color: rgba(196, 196, 196, 0.322);
+
+        }
+
+
+        .box1 {
+            position: relative;
+            display: inline;
+        }
+
+        .dropdown-content {
+            border-radius: 25px;
+
+            display: none;
+            position: absolute;
+            background-color: rgba(196, 196, 196, 0.9);
+            min-width: 100%;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,1.33);
+            z-index: 0;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 22px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        .nav a:hover {
+            border-radius: 25px;
+
+            background-color: #ddd;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,1.33);
+
+        }
+
+        .box1:hover .dropdown-content {
+            display: block;
+        }
+
+        /*.box1:hover  {background-color: rgba(196, 196, 196, 2);}*/
+
+
+        .box, .box1 {
+            border-radius: 25px;
+
+            height: 100px;
+            width: 25%;
+            padding-top: 0px;
+            border: 1px solid black;
+            /*padding: 10px 30px;*/
+
+            color: white;
+            /*display: inline-block; */
+
+            float: left;
+            box-sizing: border-box;
+            text-align: center;
+            text-decoration: none;
+
+        }
+
+        .clear { clear: both;}
+    </style>
+
+
+
+</head>
+
+<body>
+
+<h1>KUVANKÄSITTELY TEHTÄVÄ 2/2</h1>
+
+<nav class="nav" id="nav">
+    <div class="box" id="MAIN"><a href="home.html">MAIN</a></div>
+    <div class="box" id="VIDEO"><a href="OMAVIDEO.html">VIDEO</a></div>
+
+    <div class="box1" id="GALLERIA"><a href="GALLERIA.html">GALLERIA</a>
+        <div class="dropdown-content">
+            <a href="kuvankasittely1.html">MEDIA 5 T1/2</a>
+            <a href="kuvaformaatit.html">MEDIA 2 KUVAFORM.</a>
+
+        </div>
+    </div>
+    <div class="box" id="ABOUT"><a href="ABOUT.html">ABOUT</a></div>
+</nav>
+
+
+</body>
